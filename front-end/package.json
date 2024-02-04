@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "dev:server": "npx json-server --watch fake-api/db.json --port 8000",
-    "build": "tsc && vite build && cp -R build/* ../back-end/wwwroot",
+    "build": "tsc && vite build && cp -R dist/* ../back-end/wwwroot",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
