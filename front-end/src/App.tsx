@@ -2,7 +2,7 @@ import dayjs from 'dayjs'
 import dayjsUtcPlugin from 'dayjs/plugin/utc'
 import { QueryClient, QueryClientProvider } from 'react-query'
 import { ReactQueryDevtools } from 'react-query/devtools'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createHashRouter, RouterProvider } from 'react-router-dom'
 import { Root } from './routes/root'
 import { ErrorPage } from './pages/ErrorPage'
 import { Toaster } from './components/ui/toaster'
@@ -21,7 +21,7 @@ const queryClient = new QueryClient({
   },
 })
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     element: <Root />,
