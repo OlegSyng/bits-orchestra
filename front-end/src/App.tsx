@@ -5,8 +5,9 @@ import { ReactQueryDevtools } from 'react-query/devtools'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { Root } from './routes/root'
 import { ErrorPage } from './pages/ErrorPage'
-import { ProductList } from './pages/ProductList'
-import { Reviews } from './pages/Reviews'
+import { Toaster } from './components/ui/toaster'
+import { ProductsRoot } from './routes/products'
+import { ReviewsRoot } from './routes/reviews'
 
 dayjs.extend(dayjsUtcPlugin)
 
@@ -28,11 +29,11 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <ProductList />
+        element: <ProductsRoot />
       },
       {
         path: '/reviews',
-        element: <Reviews />
+        element: <ReviewsRoot />
       }
     ]
   }
@@ -42,6 +43,7 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <RouterProvider router={router} />
+      <Toaster />
       <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>
   )
