@@ -6,7 +6,7 @@ export const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false)
 
     return (
-        <nav className="bg-white border-gray-200">
+        <nav className="bg-white fixed top-0 start-0 border-b w-full z-20 border-gray-200 h-16">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
               
                 <Link to='/' className="flex items-center space-x-3">

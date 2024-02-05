@@ -1,6 +1,7 @@
 # Plank Masters App
 
 This is custom overview products application that lets you browse products and leave reviews.
+Checkout live version of this app [here.](https://olegsyng.github.io/bits-orchestra/) 
 
 ## Get Started
 
@@ -21,25 +22,19 @@ nvm use // use project version of Node.js if you are using nvm
 npm install
 ```
 
-3. Development server installation
-
-```
-npm install -g json-server
-```
-
-4. Running development server
+3. Running development server
 
 ```
 npm run dev:server
 ```
 
-5. Running application
+4. Running application
 
 ```
 npm run dev
 ```
 
-6. View client application
+5. View client application
 
 Open any browser of yout choice and navigate to [localhost:5173](http://localhost:5173/) 
 

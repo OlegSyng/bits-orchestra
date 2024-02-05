@@ -1,4 +1,6 @@
-export const reviews = [
+import { Review } from "@/types";
+
+export const reviews: Review[] = [
   {
     id: "yHsNpLqZrX",
     author: {
